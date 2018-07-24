@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?> 
+
+<VBox spacing = "10" alignment = "CENTER" prefHeight="325.0" prefWidth="275.0" fx:controller = "fxcalculator.Controller" xmlns:fx="http://javafx.com/fxml/1">
+    
+    <fx:define> 
+        <Font fx:id = "FONT" size = "18"/>
+    </fx:define>
+    
+    <StackPane alignment = "CENTER">
+        <Rectangle fill = "TRANSPARENT" stroke = "GRAY" width = "250" height = "50"/>
+        <Text fx:id = "output" font = "$FONT"/>
+    </StackPane>
+    
+    <HBox spacing = "10" alignment = "CENTER"> 
+        <Button text = "Clear Entry" prefWidth = "186" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "/" prefWidth = "55" font = "$FONT" onAction = "#processOperators"/>
+    </HBox> 
+    
+    <HBox spacing = "10" alignment = "CENTER"> 
+        <Button text = "7" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "8" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "9" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "*" prefWidth = "55" font = "$FONT" onAction = "#processOperators"/>
+    </HBox> 
+    
+    <HBox spacing = "10" alignment = "CENTER"> 
+        <Button text = "4" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "5" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "6" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "-" prefWidth = "55" font = "$FONT" onAction = "#processOperators"/>
+    </HBox>
+    
+    <HBox spacing = "10" alignment = "CENTER"> 
+        <Button text = "3" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "2" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "1" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "+" prefWidth = "55" font = "$FONT" onAction = "#processOperators"/>
+    </HBox>
+    
+    <HBox spacing = "10" alignment = "CENTER"> 
+        <Button text = "+-" prefWidth = "55" font = "$FONT" onAction = "#processOperators"/>
+        <Button text = "0" prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "." prefWidth = "55" font = "$FONT" onAction = "#processNumberpad"/>
+        <Button text = "=" prefWidth = "55" font = "$FONT" onAction = "#processOperators"/>
+    </HBox>
+    
+</VBox>
